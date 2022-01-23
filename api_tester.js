@@ -8,4 +8,9 @@ const fetchData = async () => {
     return response.data;
 };
 
-console.log(fetchData());
+const getData = async () => {
+    const data = await fetchData();
+    console.log(data);
+};
+
+getData();
